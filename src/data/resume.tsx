@@ -202,7 +202,7 @@ export const DATA = {
       video: '',
     },
     {
-      title: 'Analysis on Tweets Supposing the "Golden Era"',
+      title: 'Twitter Analysis on the "Golden Era"',
       href: 'https://meloatienza.wixsite.com/golden-era',
       dates: 'March 2023 - June 2023',
       active: true,
