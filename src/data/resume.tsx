@@ -124,6 +124,8 @@ export const DATA = {
       logoUrl: '/up.png',
       start: '2021',
       end: '2025',
+      description:
+        'Relevant Coursework: Software Engineering, Data Structures and Algorithms, Machine Learning, Database Systems, Operating Systems, Computer Networks, Automata and Complexity Theory.',
     },
     {
       school: 'Lourdes School Quezon City',
@@ -133,6 +135,8 @@ export const DATA = {
       logoUrl: '/lsqc.png',
       start: '2016',
       end: '2021',
+      description:
+        'Capstone Project: Giovanna, a web-based clinical records management system. Developed using pure HTML, CSS, Javascript, PHP, and MySQL. Won Best Capstone Project in school!',
     },
   ],
   projects: [

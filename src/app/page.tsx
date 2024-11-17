@@ -97,6 +97,7 @@ export default function Page() {
                 title={education.school}
                 subtitle={education.degree}
                 badges={education.badges}
+                description={education.description}
                 period={`${education.start} - ${education.end}`}
               />
             </BlurFade>
