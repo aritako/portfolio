@@ -20,7 +20,7 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-1.5 md:items-center">
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <Avatar className="hidden md:block md:size-40 border">
-                  <NextAvatarImage alt={DATA.name} src={DATA.avatarUrl} width={200} height={200} />
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                   <AvatarFallback>{DATA.initials}</AvatarFallback>
                 </Avatar>
               </BlurFade>
