@@ -12,6 +12,9 @@ export const DATA = {
   summary:
     'In 2020, I was filling up tons of paper forms for school and I thought to myself, _There has to be a better way to do this._ I always thought that we can streamline mundane tasks with software, so we can focus on the things that matter. Since then, this has been my motivating factor in building software.',
   tagline: 'Do it **Right.** Do it with **Purpose.**',
+  current:
+    'Currently, I am a a graduating Computer Science student from UP Diliman. I am working on my thesis under the Algorithms and Complexity Lab, with a focus on Bioinformatics, Community Detection, and Network Theory. \
+  On the side, I am a Software Engineering Consultant at Enstack, where I fix bugs and develop internal tools and services for the company.',
   avatarUrl: '/me.jpg',
   languages: [
     'React',

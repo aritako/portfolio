@@ -47,8 +47,12 @@ export default function Page() {
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
             {DATA.summary}
           </Markdown>
-          <Markdown className="prose mt-2 max-w-full text-pretty font-sans text-md text-muted-foreground dark:prose-invert">
+          <Markdown className="prose my-2 max-w-full text-pretty font-sans text-md text-muted-foreground dark:prose-invert">
             {DATA.tagline}
+          </Markdown>
+          <h2 className="text-xl font-bold">What I've Been Working On...</h2>
+          <Markdown className="prose my-2 max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+            {DATA.current}
           </Markdown>
         </BlurFade>
       </section>
