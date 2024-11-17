@@ -201,6 +201,47 @@ export const DATA = {
       image: '/rollcall.png',
       video: '',
     },
+    {
+      title: 'Analysis on Tweets Supposing the "Golden Era"',
+      href: 'https://meloatienza.wixsite.com/golden-era',
+      dates: 'March 2023 - June 2023',
+      active: true,
+      description: 'Used Natural Language Processing to process API-scraped Tweets. \
+      Clustered common topics via _Latent Dirichlet Allocation_ and _t-Distributed Stochastic Neighbor Embedding_.\
+      Awarded as **Best Portfolio** in [Watch the Facts! Mini-Conference.](https://dcs.upd.edu.ph/news/watch-facts-mini-conference-data-science-and-disinformation-philippines/)\
+      ',
+      links: [
+        {
+          type: 'Website',
+          href: 'https://meloatienza.wixsite.com/golden-era',
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: 'Source',
+          href: 'https://github.com/aritako/cs132-g36',
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: '/golden-era.png',
+    },
+    {
+      title: 'Neural Network Models for Electrodes',
+      href: 'https://github.com/aritako/binary-signal-classification',
+      dates: 'May 2024 - June 2024',
+      active: true,
+      description: 'Built, trained and tested MLP, CNN and RNN models via TensorFlow. \
+      Conducted in-depth analysis between neural networks in performing binary classification\
+      Performed Hyperparameter Tuning, achieving 99.22% accuracy on best chosen model.\
+      ',
+      links: [
+        {
+          type: 'Source',
+          href: 'https://github.com/aritako/binary-signal-classification',
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: '/electrodes.png',
+    }
   ],
   volunteering: [
     {
