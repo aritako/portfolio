@@ -117,6 +117,17 @@ export const DATA = {
   ],
   education: [
     {
+      school: 'UP Diliman DCS - Algorithms and Complexity Laboratory',
+      href: 'https://aclab.dcs.upd.edu.ph/',
+      degree: 'Undergraduate Researcher',
+      badges: ['Thesis'],
+      logoUrl: 'aclab.png',
+      start: '2024',
+      end: '2025',
+      description:
+        'My research is in the field of Bioinformatics, Community Detection, and Network Theory. I am currently working on a thesis which aims to develop a novel metric for identifying communities in gene coexpression networks of yeast cells.',
+    },
+    {
       school: 'University of the Philippines Diliman',
       href: 'https://upd.edu.ph/',
       degree: 'Bachelor of Science in Computer Science (BS CS)',
