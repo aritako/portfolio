@@ -236,6 +236,7 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY * 18 + id * 0.05}
                 >
                   <HackathonCard
+                    id={id}
                     title={project.title}
                     description={project.description}
                     location={project.organization}
