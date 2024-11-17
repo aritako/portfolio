@@ -208,8 +208,8 @@ export const DATA = {
       active: true,
       description: 'Used Natural Language Processing to process API-scraped Tweets. \
       Clustered common topics via _Latent Dirichlet Allocation_ and _t-Distributed Stochastic Neighbor Embedding_.\
-      Awarded as **Best Portfolio** in [Watch the Facts! Mini-Conference.](https://dcs.upd.edu.ph/news/watch-facts-mini-conference-data-science-and-disinformation-philippines/)\
-      ',
+      Awarded as **Best Portfolio** in [Watch the Facts! Mini-Conference.](https://dcs.upd.edu.ph/news/watch-facts-mini-conference-data-science-and-disinformation-philippines/)',
+      technologies: ['Python', 'Pandas', 'NumPy', 'NLTK', 'Matplotlib'],
       links: [
         {
           type: 'Website',
@@ -223,6 +223,7 @@ export const DATA = {
         }
       ],
       image: '/golden-era.png',
+      video: '',
     },
     {
       title: 'Neural Network Models for Electrodes',
@@ -231,8 +232,8 @@ export const DATA = {
       active: true,
       description: 'Built, trained and tested MLP, CNN and RNN models via TensorFlow. \
       Conducted in-depth analysis between neural networks in performing binary classification\
-      Performed Hyperparameter Tuning, achieving 99.22% accuracy on best chosen model.\
-      ',
+      Performed Hyperparameter Tuning, achieving 99.22% accuracy on best chosen model.',
+      technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy'],
       links: [
         {
           type: 'Source',
@@ -241,6 +242,7 @@ export const DATA = {
         }
       ],
       image: '/electrodes.png',
+      video: '',
     }
   ],
   volunteering: [
