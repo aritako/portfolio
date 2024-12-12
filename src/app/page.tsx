@@ -3,7 +3,7 @@ import BlurFade from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import { ProjectCard } from '@/components/project-card';
 import { ResumeCard } from '@/components/resume-card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage, NextAvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { DATA } from '@/data/resume';
 import Link from 'next/link';
@@ -17,7 +17,13 @@ export default function Page() {
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
+            <div className="flex-col flex flex-1 space-y-1.5 md:items-center">
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <Avatar className="hidden md:block md:size-40 border">
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
+              </BlurFade>
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
@@ -25,13 +31,13 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(' ')[0]} 👋`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-xl md:text-center"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-28 md:size-40 md:hidden border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -80,9 +86,8 @@ export default function Page() {
                 subtitle={work.title}
                 href={work.href}
                 badges={work.badges}
-                period={`${work.start} - ${
-                  'end' in work ? work.end : 'Present'
-                }`}
+                period={`${work.start} - ${'end' in work ? work.end : 'Present'
+                  }`}
                 description={work.description}
               />
             </BlurFade>
@@ -231,6 +236,7 @@ export default function Page() {
                   delay={BLUR_FADE_DELAY * 18 + id * 0.05}
                 >
                   <HackathonCard
+                    id={id}
                     title={project.title}
                     description={project.description}
                     location={project.organization}

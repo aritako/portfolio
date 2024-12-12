@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
 interface Props {
+  id: number;
   title: string;
   description: string;
   dates: string;
@@ -16,6 +17,7 @@ interface Props {
 }
 
 export function HackathonCard({
+  id,
   title,
   description,
   dates,
@@ -31,6 +33,9 @@ export function HackathonCard({
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
+      {links && id === links.length + 1 &&
+        (< div className="absolute -left-[52px] -bottom-2 w-6 h-6 bg-accent rounded-full"></div>)
+      }
       <div className="flex flex-1 flex-col justify-start gap-1">
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
@@ -45,18 +50,20 @@ export function HackathonCard({
           </span>
         )}
       </div>
-      {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-          {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
-                {link.icon}
-                {link.title}
-              </Badge>
-            </Link>
-          ))}
-        </div>
-      )}
-    </li>
+      {
+        links && links.length > 0 && (
+          <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
+            {links?.map((link, idx) => (
+              <Link href={link.href} key={idx}>
+                <Badge key={idx} title={link.title} className="flex gap-2">
+                  {link.icon}
+                  {link.title}
+                </Badge>
+              </Link>
+            ))}
+          </div>
+        )
+      }
+    </li >
   );
 }

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import * as AvatarPrimitive from "@radix-ui/react-avatar"
-
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 const Avatar = React.forwardRef<
@@ -32,6 +32,18 @@ const AvatarImage = React.forwardRef<
 ))
 AvatarImage.displayName = AvatarPrimitive.Image.displayName
 
+const NextAvatarImage = React.forwardRef<
+  HTMLImageElement,
+  React.ComponentPropsWithoutRef<typeof Image> & { alt: string }
+>(({ className, ...props }, ref) => (
+  <Image
+    ref={ref}
+    className={cn("aspect-square h-full w-full", className)}
+    {...props}
+  />
+));
+NextAvatarImage.displayName = "NextAvatarImage";
+
 const AvatarFallback = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Fallback>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>
@@ -47,4 +59,4 @@ const AvatarFallback = React.forwardRef<
 ))
 AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName
 
-export { Avatar, AvatarImage, AvatarFallback }
+export { Avatar, AvatarImage, AvatarFallback, NextAvatarImage }
