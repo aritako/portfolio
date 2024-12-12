@@ -93,7 +93,7 @@ export const DATA = {
       href: 'https://www.linkedin.com/company/enstack/posts/?feedView=all',
       badges: ['Part-Time', 'Hybrid'],
       location: 'BGC, Taguig',
-      title: 'Software Engineering',
+      title: 'Software Engineer',
       logoUrl: '/enstack.webp',
       start: 'September 2024',
       description:
@@ -206,7 +206,8 @@ export const DATA = {
       href: 'https://meloatienza.wixsite.com/golden-era',
       dates: 'March 2023 - June 2023',
       active: true,
-      description: 'Used Natural Language Processing to process API-scraped Tweets. \
+      description:
+        'Used Natural Language Processing to process API-scraped Tweets. \
       Clustered common topics via _Latent Dirichlet Allocation_ and _t-Distributed Stochastic Neighbor Embedding_.\
       Awarded as **Best Portfolio** in [Watch the Facts! Mini-Conference.](https://dcs.upd.edu.ph/news/watch-facts-mini-conference-data-science-and-disinformation-philippines/)',
       technologies: ['Python', 'Pandas', 'NumPy', 'NLTK', 'Matplotlib'],
@@ -220,7 +221,7 @@ export const DATA = {
           type: 'Source',
           href: 'https://github.com/aritako/cs132-g36',
           icon: <Icons.github className="size-3" />,
-        }
+        },
       ],
       image: '/golden-era.png',
       video: '',
@@ -230,7 +231,8 @@ export const DATA = {
       href: 'https://github.com/aritako/binary-signal-classification',
       dates: 'May 2024 - June 2024',
       active: true,
-      description: 'Built, trained and tested MLP, CNN and RNN models via TensorFlow. \
+      description:
+        'Built, trained and tested MLP, CNN and RNN models via TensorFlow. \
       Conducted in-depth analysis between neural networks in performing binary classification\
       Performed Hyperparameter Tuning, achieving 99.22% accuracy on best chosen model.',
       technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy'],
@@ -239,11 +241,11 @@ export const DATA = {
           type: 'Source',
           href: 'https://github.com/aritako/binary-signal-classification',
           icon: <Icons.github className="size-3" />,
-        }
+        },
       ],
       image: '/electrodes.png',
       video: '',
-    }
+    },
   ],
   volunteering: [
     {
