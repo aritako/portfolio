@@ -14,7 +14,7 @@ export const DATA = {
   tagline: 'Do it **Right.** Do it with **Purpose.**',
   current:
     'Currently, I am a a graduating Computer Science student from UP Diliman. I am working on my thesis under the Algorithms and Complexity Lab, with a focus on Bioinformatics, Community Detection, and Network Theory. \
-  On the side, I am a Software Engineering Consultant at Enstack, where I fix bugs and develop internal tools and services for the company.',
+  On the side, I am a Software Engineer at Enstack, where I fix bugs and develop internal tools and services for the company.',
   avatarUrl: '/me.jpg',
   languages: [
     'React',
@@ -93,7 +93,7 @@ export const DATA = {
       href: 'https://www.linkedin.com/company/enstack/posts/?feedView=all',
       badges: ['Part-Time', 'Hybrid'],
       location: 'BGC, Taguig',
-      title: 'Software Engineering Consultant',
+      title: 'Software Engineering',
       logoUrl: '/enstack.webp',
       start: 'September 2024',
       description:
