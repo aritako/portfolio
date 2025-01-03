@@ -5,8 +5,6 @@ export const DATA = {
   name: 'Melo Atienza',
   initials: 'CA',
   url: 'https://dillion.io',
-  location: 'San Francisco, CA',
-  locationLink: 'https://www.google.com/maps/place/sanfrancisco',
   description:
     'A Software Engineer with a principles-based approach for building good products.',
   summary:
@@ -17,12 +15,14 @@ export const DATA = {
   On the side, I am a Software Engineer at Enstack, where I fix bugs and develop internal tools and services for the company.',
   avatarUrl: '/me.jpg',
   languages: [
-    'React',
-    'Next.js',
     'Javascript',
     'Typescript',
     'Python',
-    'Postgres',
+    'C',
+    'SQL',
+    'HTML/CSS',
+    'Gleam',
+    'Julia',
   ],
   technologies: [
     'Git',
@@ -30,17 +30,21 @@ export const DATA = {
     'Firebase',
     'Vercel',
     'MySQL',
+    'PostgreSQL',
     'MongoDB',
     'AWS Services',
+    'Serverless',
     'Datadog',
   ],
   libraries: [
     'React',
     'NextJS',
     'Angular',
+    'React Native',
     'Ionic',
     'Capacitor',
     'Django',
+    'Flask',
     'TensorFlow',
   ],
   navbar: [
@@ -88,6 +92,19 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: 'Dormy PH',
+      href: 'https://www.linkedin.com/company/dormy-ph/posts/?feedView=all',
+      badges: ['Internship', 'Remote'],
+      location: 'Makati City',
+      title: 'Software Engineering Intern',
+      logoUrl: '/dormy.jpg',
+      start: 'December 2024',
+      description:
+        'Created features for new mobile app in React Native, integrating existing tRPC endpoints to a native frontend. \
+        Updated NextJS main site with minor features, ranging from static content to dynamically rendered data. \
+        ',
+    },
     {
       company: 'Enstack',
       href: 'https://www.linkedin.com/company/enstack/posts/?feedView=all',
