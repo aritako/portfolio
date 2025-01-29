@@ -31,7 +31,7 @@ export const DATA = {
     'Vercel',
     'MySQL',
     'MongoDB',
-    'AWS Services',
+    'Amazon Web Services',
     'Datadog',
   ],
   libraries: [
