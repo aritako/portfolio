@@ -3,7 +3,12 @@ import BlurFade from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import { ProjectCard } from '@/components/project-card';
 import { ResumeCard } from '@/components/resume-card';
-import { Avatar, AvatarFallback, AvatarImage, NextAvatarImage } from '@/components/ui/avatar';
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  NextAvatarImage,
+} from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { DATA } from '@/data/resume';
 import Link from 'next/link';
@@ -86,8 +91,9 @@ export default function Page() {
                 subtitle={work.title}
                 href={work.href}
                 badges={work.badges}
-                period={`${work.start} - ${'end' in work ? work.end : 'Present'
-                  }`}
+                period={`${work.start} - ${
+                  'end' in work ? work.end : 'Present'
+                }`}
                 description={work.description}
               />
             </BlurFade>
@@ -136,10 +142,10 @@ export default function Page() {
       <section id="technologies">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
-            <h2 className="text-xl font-bold">Technologies</h2>
+            <h2 className="text-xl font-bold">Frontend</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {DATA.technologies.map((skill, id) => (
+            {DATA.frontend.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <Badge key={skill}>{skill}</Badge>
               </BlurFade>
@@ -150,10 +156,24 @@ export default function Page() {
       <section id="lib-frameworks">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <h2 className="text-xl font-bold">Libraries & Frameworks</h2>
+            <h2 className="text-xl font-bold">Backend</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {DATA.libraries.map((skill, id) => (
+            {DATA.backend.map((skill, id) => (
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={skill}>{skill}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="lib-developerTools">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <h2 className="text-xl font-bold">Developer Tools & Platforms</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.developerTools.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <Badge key={skill}>{skill}</Badge>
               </BlurFade>

@@ -12,40 +12,36 @@ export const DATA = {
   tagline: 'Do it **Right.** Do it with **Purpose.**',
   current:
     'Currently, I am a a graduating Computer Science student from UP Diliman. I am working on my thesis under the Algorithms and Complexity Lab, with a focus on Bioinformatics, Community Detection, and Network Theory. \
-  On the side, I am a Software Engineer at Enstack, where I fix bugs and develop internal tools and services for the company.',
+    On the side, I am working on [server-side development with Java and Spring Boot](https://github.com/aritako/shortly). **Looking for full-time opportunities as a Software Engineer!**',
   avatarUrl: '/me.jpg',
   languages: [
     'Javascript',
     'Typescript',
+    'Java',
     'Python',
     'C',
     'SQL',
     'HTML/CSS',
-    'Gleam',
-    'Julia',
   ],
-  technologies: [
-    'Git',
-    'Supabase',
-    'Firebase',
-    'Vercel',
-    'MySQL',
-    'PostgreSQL',
-    'MongoDB',
-    'Amazon Web Services',
-    'Serverless',
-    'Datadog',
-  ],
-  libraries: [
+  frontend: [
     'React',
-    'NextJS',
-    'Angular',
+    'Next.js',
     'React Native',
+    'Angular',
     'Ionic',
     'Capacitor',
-    'Django',
-    'Flask',
-    'TensorFlow',
+  ],
+  backend: ['Flask', 'Django', 'Spring Boot', 'MySQL', 'PostgreSQL', 'MongoDB'],
+  developerTools: [
+    'Git',
+    'GitHub',
+    'Vercel',
+    'Amazon Web Services',
+    'Serverless',
+    'Supabase',
+    'Firebase',
+    'MongoDB Atlas',
+    'Datadog',
   ],
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
@@ -103,6 +99,7 @@ export const DATA = {
       description:
         'Created features for new mobile app in React Native, integrating existing tRPC endpoints to a native frontend. \
         Updated NextJS main site with minor features, ranging from static content to dynamically rendered data. \
+        Engineered scalable, production-grade UI components, including a dynamic bottom drawer system, multi-time store hours picker, and message template maker. \
         ',
     },
     {
@@ -116,6 +113,7 @@ export const DATA = {
       description:
         'Developed an in-house internal admin dashboard to monitor company transactions, orders and inventory using Angular. \
         Migrated Kafka Producer to AWS SQS with AWS Lambda processor integration. \
+        Engineered a secure inter-service communication between Flask and Django backends via internal APIs protected by token-based authentication. \
         Resolved complex bugs involving out-of-sync products in an offline-first app, ensuring correct data synchronization across offline and online states. \
         ',
     },
