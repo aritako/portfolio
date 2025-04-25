@@ -42,6 +42,7 @@ export const DATA = {
     'Firebase',
     'MongoDB Atlas',
     'Datadog',
+    'Turborepo',
   ],
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
@@ -89,32 +90,34 @@ export const DATA = {
 
   work: [
     {
-      company: 'Dormy PH',
-      href: 'https://www.linkedin.com/company/dormy-ph/posts/?feedView=all',
-      badges: ['Internship', 'Remote'],
-      location: 'Makati City',
-      title: 'Software Engineering Intern',
-      logoUrl: '/dormy.jpg',
-      start: 'December 2024',
-      description:
-        'Created features for new mobile app in React Native, integrating existing tRPC endpoints to a native frontend. \
-        Updated NextJS main site with minor features, ranging from static content to dynamically rendered data. \
-        Engineered scalable, production-grade UI components, including a dynamic bottom drawer system, multi-time store hours picker, and message template maker. \
-        ',
-    },
-    {
       company: 'Enstack',
       href: 'https://www.linkedin.com/company/enstack/posts/?feedView=all',
       badges: ['Part-Time', 'Hybrid'],
       location: 'BGC, Taguig',
       title: 'Software Engineer',
       logoUrl: '/enstack.webp',
-      start: 'September 2024',
+      start: 'Sep 2024',
+      end: 'Mar 2025',
       description:
         'Developed an in-house internal admin dashboard to monitor company transactions, orders and inventory using Angular. \
         Migrated Kafka Producer to AWS SQS with AWS Lambda processor integration. \
         Engineered a secure inter-service communication between Flask and Django backends via internal APIs protected by token-based authentication. \
         Resolved complex bugs involving out-of-sync products in an offline-first app, ensuring correct data synchronization across offline and online states. \
+        ',
+    },
+    {
+      company: 'Dormy PH',
+      href: 'https://www.linkedin.com/company/dormy-ph/posts/?feedView=all',
+      badges: ['Internship', 'Remote'],
+      location: 'Makati City',
+      title: 'Software Engineering Intern',
+      logoUrl: '/dormy.jpg',
+      start: 'Dec 2024',
+      end: 'Mar 2025',
+      description:
+        'Created features for new mobile app in React Native, integrating existing tRPC endpoints to a native frontend. \
+        Updated NextJS main site with minor features, ranging from static content to dynamically rendered data. \
+        Engineered scalable, production-grade UI components, including a dynamic bottom drawer system, multi-time store hours picker, and message template maker. \
         ',
     },
     {
@@ -124,8 +127,8 @@ export const DATA = {
       location: 'BGC, Taguig',
       title: 'Software Engineering Intern',
       logoUrl: '/enstack.webp',
-      start: 'June 2024',
-      end: 'August 2024',
+      start: 'Jun 2024',
+      end: 'Aug 2024',
       description:
         'Resolved critical live bugs in production, such as tracking API and AWS Lambda issues via Datadog and hotfixing frontend issues in an Ionic Angular-based app. \
         Optimized document AWS S3 uploader service of the app, reducing byte size of files by 97%. \
@@ -201,7 +204,7 @@ export const DATA = {
     {
       title: 'RollCall',
       href: 'https://github.com/aritako/rollcall',
-      dates: 'June 2023 - Present',
+      dates: 'Aug 2023 - May 2024',
       active: true,
       description:
         'Developed QR-based attendance system for students, and an attendance monitoring dashboard for teachers. A mobile app with native features. Made in fulfillment of my Software Engineering course.',
@@ -219,7 +222,7 @@ export const DATA = {
     {
       title: 'Twitter Analysis on the "Golden Era"',
       href: 'https://meloatienza.wixsite.com/golden-era',
-      dates: 'March 2023 - June 2023',
+      dates: 'Mar 2023 - Jun 2023',
       active: true,
       description:
         'Used Natural Language Processing to process API-scraped Tweets. \
@@ -244,7 +247,7 @@ export const DATA = {
     {
       title: 'Neural Network Models for Electrodes',
       href: 'https://github.com/aritako/binary-signal-classification',
-      dates: 'May 2024 - June 2024',
+      dates: 'May 2024 - Jun 2024',
       active: true,
       description:
         'Built, trained and tested MLP, CNN and RNN models via TensorFlow. \
